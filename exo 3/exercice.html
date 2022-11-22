@@ -3,15 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <title>Challenge: Mad Libs</title>
+
 </head>
 <body>
 
 <h1>Mad Libs</h1>
 
 <ul>
-    <li>Noun: <input type="text" id="noun"></li>
-    <li>Adjective: <input type="text" id="adjective"></li>
-    <li>Someone's Name: <input type="text" id="person"></li>
+    <li><label for="noun">Noun: </label><input type="text" name="nom" id="noun"></li>
+    <li><label for="adjective">Adjective: </label><input type="text" name="adjectif" id="adjective"></li>
+    <li><label for="person">Someone's Name: </label><input type="text" name="personne" id="person"></li>
 </ul>
 
 <button id="lib-button">Lib it!</button>
@@ -20,15 +21,7 @@
     <span id="story"></span>
 </p>
 
-<script>
-    var libButton = document.getElementById('lib-button');
-    var libIt = function() {
-        var storyDiv = document.getElementById("story");
-        storyDiv.innerHTML = "??Your story here";
-    };
-    libButton.addEventListener('click', libIt);
-
-</script>
+<script src="exercice.js"></script>
 
 </body>
 </html>
